@@ -6,21 +6,38 @@ public class Main {
     public static void main(String[] args) {
 
 
+        UrhajoKK elsoUrhajo = new UrhajoKK(2250, "Űrgolyhó", 2200, 10, 20, 50);
+        //adatlap(elsoUrhajo);
+
+        VarosKK alfapolisz = new VarosKK("Alfapolisz", otUrhajoGeneralasa());
+        VarosKK betapolisz = new VarosKK("Bétapolisz", tizUrhajoGeneralasa());
+        // betapolisz.urhajoLista();
+
+        //alfapolisz.leggyorsabbUrhajo();
+
+        alfapolisz.tipusLista("Gamma-3");
+
+        //alfapolisz.gyorshajtok();
+
+
     }
 
 
     static UrhajoKK[] otUrhajoGeneralasa() {
-        return new UrhajoKK[]{
+        UrhajoKK[] otUrhajo = new UrhajoKK[]{
                 new UrhajoKK(2250, "Alpha-1", 2100),
                 new UrhajoKK(2055, "Beta-2", 1800),
                 new UrhajoKK(2054, "Gamma-3", 1994),
                 new UrhajoKK(2249, "Alpha-2", 2008),
                 new UrhajoKK(2230, "Beta-4", 2133),
         };
+
+
+        return otUrhajo;
     }
 
     static UrhajoKK[] tizUrhajoGeneralasa() {
-        return new UrhajoKK[]{
+        UrhajoKK[] tizUrhajo = new UrhajoKK[]{
                 new UrhajoKK(2250, "Alpha-1", 2100),
                 new UrhajoKK(2055, "Beta-2", 1800),
                 new UrhajoKK(2054, "Gamma-3", 1994),
@@ -34,6 +51,9 @@ public class Main {
 
 
         };
+
+
+        return tizUrhajo;
     }
 
 
